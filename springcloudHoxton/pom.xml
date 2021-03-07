@@ -7,6 +7,9 @@
     <groupId>org.lee</groupId>
     <artifactId>springcloudHoxton</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cloud-provider-payment8001</module>
+    </modules>
     <packaging>pom</packaging>
 
     <!--统一管理jar包版本-->
@@ -85,6 +88,11 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>2.2.2.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
